@@ -25,11 +25,11 @@ class ViewController: UIViewController {
     
     @IBAction func button_tapped(_ sender: Any) {
         title_label.text = "Success!"
-        sum_box.text = "success"
+        
         print(top_box.text!)
         print(bottom_box.text!)
         
-
+        sum_box.text = "Answer is...\(Double(top_box.text!)! + Double(bottom_box.text!)!)"
  
     }
     
