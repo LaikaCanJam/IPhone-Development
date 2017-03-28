@@ -13,34 +13,39 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var coolLabel: UILabel!
     
-    var buttonCount = 0
+    @IBOutlet weak var title_label: UILabel!
+    
+    @IBOutlet weak var sum_box: UILabel!
+    
+    
+    @IBOutlet weak var top_box: UITextField!
+    
+    @IBOutlet weak var bottom_box: UITextField!
+    
     
     @IBAction func button_tapped(_ sender: Any) {
-    coolLabel.text = "Hello There!"
-    buttonCount+=1
-        if buttonCount >= 10{
-            coolLabel.text = "You tapped the button 10 times"
-        }
-        // onlt use print to debug 
-    
+        title_label.text = "Success!"
+        sum_box.text = "success"
+        print(top_box.text!)
+        print(bottom_box.text!)
+        
+
+ 
     }
     
-    @IBAction func different_button(_ sender: Any) {
-    coolLabel.text = "Buttons are cool"
-    }
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        coolLabel.text = "Hello There"
+       
         // dont need () at the end of self statement for some reason
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        // Dispose of any resources th at can be recreated.
     }
 
 
