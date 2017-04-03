@@ -29,7 +29,13 @@ class ViewController: UIViewController {
         print(top_box.text!)
         print(bottom_box.text!)
         
-        sum_box.text = "Answer is...\(Double(top_box.text!)! + Double(bottom_box.text!)!)"
+        let addition = false
+        
+        if addition {
+            sum_box.text = "Answer is...\(Double(top_box.text!)! + Double(bottom_box.text!)!)"
+        } else {
+            sum_box.text = "Answer is...\(Double(top_box.text!)! - Double(bottom_box.text!)!)"
+        }
  
     }
     
